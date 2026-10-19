@@ -1,0 +1,4 @@
+node_modules/
+dist/
+functions/_lib/dict.js
+.wrangler/

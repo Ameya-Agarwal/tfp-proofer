@@ -1,0 +1,21 @@
+{
+  "name": "tfp-proofer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Rule-based spelling, grammar and Fine Print style-guide checker. No LLMs.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test \"tests/*.test.mjs\"",
+    "dev": "npm run build && wrangler pages dev dist"
+  },
+  "dependencies": {
+    "dictionary-en": "^4.0.0",
+    "dictionary-en-gb": "^3.0.0",
+    "nspell": "^2.1.5"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "wrangler": "^4.0.0"
+  }
+}
